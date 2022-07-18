@@ -1,0 +1,23 @@
+.descripcion {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fundadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .ceo {
+        text-align: center;
+        width: 400px;
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+
+
+

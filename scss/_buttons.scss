@@ -1,0 +1,22 @@
+
+
+.button {
+    background-color: $colorPrincipal;
+    color: $white;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: all;
+    &:hover {
+        background-color: $acentos;
+    }
+}
+
+.buttonPlay {
+    @extend .button;
+    background-color:rgb(4, 107, 102) ;
+    &:hover {
+        background-color: rgb(10, 188, 179);
+    }
+}

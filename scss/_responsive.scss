@@ -1,0 +1,394 @@
+/* RESPONSIVE DESIGN */
+
+/*TABLET*/
+@media (max-width: 1023px) {
+    /*INDEX*/
+
+    nav {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: nav;
+        a {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .h1 {
+        font-size: 2.5rem;
+    }
+    
+    .h2 {
+        font-size: 1.75rem;
+    }
+    
+    .h3 {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: footer;
+        a {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .redes {
+            margin-bottom: 20px;
+        }
+    }
+
+    header {
+        height: 450px;
+        margin-top: 32px;
+        padding-top: 25px;
+        padding-left: 25px;
+        .banner {
+            width: 70%;
+            margin-left: 5%;
+            text-align: none;
+        }
+    }
+
+    
+    .comentarios {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        text-align: center;
+        .comentariosDeUsuarios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .comentario {
+                margin: 8px;
+                text-align: center;
+                height: auto;
+                width: 250px;
+                margin-bottom: 32px;
+                padding: 0px;
+                position: relative;
+            }
+        }
+    }
+
+    .informacion {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        .info {
+            margin-top: 32px;
+            text-align: left;
+            margin-left: 20px;
+        }
+    }
+
+    /*COMO FUNCIONA*/
+    .titulo {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .pasos {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    iframe {
+        height: 240px;
+    }
+
+    /* PREGUNTAS */
+    #grillaAreas {
+        display: grid;
+        grid-template-areas:
+        /* 1 columnas y 5 filas */
+        "arriba"
+        "titulo"
+        "columna"
+        "preguntas"
+        "solicitud"
+        "footer footer";
+        grid-template-columns: 100%;
+    }
+    
+    .preguntas {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 0px;
+        margin-bottom: 32px;
+    }
+
+    .solicitud {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 32px;
+    }
+
+    /*NOTICIAS*/
+
+    .ultimaNoticia {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        padding-left: 0%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .notaPrincipal {
+            margin-left: 0px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        img {
+            width: 80%;
+        }
+    }
+
+    .nota {
+        margin-bottom: 12px;
+    }
+
+    .novedades img {
+        margin-bottom: 20px;
+    }
+
+    /*NOSOTROS*/
+    .ceo {
+        margin-bottom: 40px;
+    }
+}
+
+
+/*MOBILE*/
+@media (max-width: 480px) {
+    /*INDEX*/
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .h1 {
+        font-size: 2.25rem;
+    }
+    
+    .h2 {
+        font-size: 1.5rem;
+    }
+    
+    .h3 {
+        font-size: 1.25rem;
+    }
+    
+    .h4 {
+        font-size: 1rem;
+    }
+
+    header {
+        height: 370px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 20px;
+        .banner {
+            width: 100%;
+            text-align: left;
+        }
+    }
+  
+    #menuCheck:not(:checked) ~ nav {
+        display: none;
+    }
+
+    #menuCheck:checked ~ nav {
+        display: block;
+    }
+    #menuCheck:checked ~ label  #menuAbrir {
+        display: none;
+    }
+    #menuCheck:checked ~ label  #menuCerrar {
+        display: block;
+        color: $white;
+    }
+
+    #menu {
+        display: block;
+        z-index: 2;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: $colorPrincipal;
+        padding-top: 4rem;
+        padding-right: 1.5rem;
+        a {
+            color: $white;
+            display: block;
+            text-align: end;
+        }
+        ul, li {
+            display: block;
+            text-align: right;
+            font-size: 1.5rem;
+        }
+    }
+
+    footer {
+        p {
+            display: none;
+        }
+        .redes {
+            display: none;
+        }
+    }
+
+    .comentario {
+        text-align: center;
+        height: auto;
+        width: 250px;
+        margin-bottom: 20px;
+        padding: 0px;
+        position: relative;
+    }
+
+    /*COMO FUNCIONA*/
+    iframe {
+        height: 200px;
+    }
+    
+    .paso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        .ajustePasos {
+            margin-left: 0px;
+            align-items: center;
+            text-align: center;
+        }
+        .ajustePasos2 {
+            margin-right: 0px;
+            text-align: none;
+            align-items: center;
+        }
+    }
+
+    /*PREGUNTAS*/
+    #grillaAreas {
+        display: grid;
+        grid-template-areas:
+        /* 1 columnas y 5 filas */
+        "arriba"
+        "titulo"
+        "columna"
+        "preguntas"
+        "solicitud"
+        "footer footer";
+        grid-template-columns: 100%;
+    }
+    
+    .preguntas {
+        padding-left: 10%;
+        padding-right: 10%;;
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+
+    .solicitud {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 24px;
+    }
+
+    /* TIENDAS */
+    .marcas {
+        margin-bottom: 24px;
+        
+    }
+    
+    .galeriaTiendas {
+        margin-bottom: 32px;
+        margin-top: 16px;
+    }
+    
+    .galeriaProductos {
+        margin-bottom: 24px;
+
+    }
+
+    /*NOTICIAS*/
+
+    .ultimaNoticia {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding-left: 0%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*NOSOTROS*/
+    .descripcion {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .informacion {
+        padding: 20px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        .info {
+            text-align: center;
+            margin-left: 0px;
+        }
+    }
+}

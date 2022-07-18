@@ -1,0 +1,46 @@
+@mixin imagenes ($ancho , $alto) {
+    width: $ancho;
+    height: $alto;
+    
+}
+
+.marcas {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.galeriaTiendas {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    .comercio {
+        margin: 10px;
+        @include imagenes (170px, auto);
+    }
+}
+
+.galeriaProductos {
+    margin-bottom: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+    .producto {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .comida {
+            @include imagenes (200px, auto);
+        }
+    }
+}
+

@@ -1,0 +1,85 @@
+
+
+#grillaAreas {
+    display: grid;
+    grid-template-areas:
+    /* 2 columnas y 5 filas */
+    "arriba arriba"
+    "titulo titulo"
+    "preguntas columna"
+    "solicitud solicitud"
+    "footer footer";
+    grid-template-columns: 50%;
+}
+
+#arriba {
+    grid-area: arriba;
+}
+
+#titulo {
+    grid-area: titulo;
+}
+
+#preguntas {
+    grid-area: preguntas;
+}
+
+#columna {
+    grid-area: columna;
+}
+
+#solicitud {
+    grid-area: solicitud;
+}
+
+.preguntas {
+    padding-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .pregunta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.solicitud {
+    width: 50%;
+    padding-left: 5%;
+    margin-bottom: 80px;
+    form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 20px;
+            height: 40px;
+            border-color: $colorPrincipal;
+            border-radius: 8px;
+        }
+        textarea {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-color: $colorPrincipal;
+        }
+    }
+}
+
+
+
+
+
+
+
