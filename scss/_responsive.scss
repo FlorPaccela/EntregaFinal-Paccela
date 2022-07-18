@@ -3,6 +3,7 @@
 /*TABLET*/
 @media (max-width: 1023px) {
     /*INDEX*/
+
     #menuCheck:not(:checked) ~ nav {
         display: none;
     }
@@ -28,9 +29,11 @@
         top: 0;
         right: 0;
         height: 100%;
+        width: 100%;
         background-color: $colorPrincipal;
         padding-top: 4rem;
         padding-right: 1.5rem;
+        opacity:80%;
         a {
             color: $white;
             display: block;
@@ -40,6 +43,12 @@
             display: block;
             text-align: right;
             font-size: 1.5rem;
+            .transicionNav {
+                transition: all;
+                &:hover {
+                    background-color: $colorPrincipal;
+                }
+            }
         }
     }
 
@@ -260,46 +269,6 @@
         }
     }
   
-    #menuCheck:not(:checked) ~ nav {
-        display: none;
-    }
-
-    #menuCheck:checked ~ nav {
-        display: block;
-    }
-    #menuCheck:checked ~ label  #menuAbrir {
-        display: none;
-    }
-    #menuCheck:checked ~ label  #menuCerrar {
-        display: block;
-        color: $white;
-    }
-
-    #menu {
-        display: block;
-        z-index: 2;
-    }
-
-    nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        background-color: $colorPrincipal;
-        padding-top: 4rem;
-        padding-right: 1.5rem;
-        a {
-            color: $white;
-            display: block;
-            text-align: end;
-        }
-        ul, li {
-            display: block;
-            text-align: right;
-            font-size: 1.5rem;
-        }
-    }
-
     footer {
         p {
             display: none;

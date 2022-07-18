@@ -526,9 +526,11 @@ footer {
     top: 0;
     right: 0;
     height: 100%;
+    width: 100%;
     background-color: #0F8F6E;
     padding-top: 4rem;
     padding-right: 1.5rem;
+    opacity: 80%;
   }
   nav a {
     color: #f4f2f2;
@@ -539,6 +541,12 @@ footer {
     display: block;
     text-align: right;
     font-size: 1.5rem;
+  }
+  nav ul .transicionNav, nav li .transicionNav {
+    transition: all;
+  }
+  nav ul .transicionNav:hover, nav li .transicionNav:hover {
+    background-color: #0F8F6E;
   }
   h1 {
     font-size: 2.5rem;
@@ -716,42 +724,6 @@ footer {
   header .banner {
     width: 100%;
     text-align: left;
-  }
-  #menuCheck:not(:checked) ~ nav {
-    display: none;
-  }
-  #menuCheck:checked ~ nav {
-    display: block;
-  }
-  #menuCheck:checked ~ label #menuAbrir {
-    display: none;
-  }
-  #menuCheck:checked ~ label #menuCerrar {
-    display: block;
-    color: #f4f2f2;
-  }
-  #menu {
-    display: block;
-    z-index: 2;
-  }
-  nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #0F8F6E;
-    padding-top: 4rem;
-    padding-right: 1.5rem;
-  }
-  nav a {
-    color: #f4f2f2;
-    display: block;
-    text-align: end;
-  }
-  nav ul, nav li {
-    display: block;
-    text-align: right;
-    font-size: 1.5rem;
   }
   footer p {
     display: none;
